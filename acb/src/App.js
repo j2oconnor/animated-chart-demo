@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
 import './App.css';
+import Dashboard from"./components/Dashboard";
+import all_data from "./components/data.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);  
+    this.state = all_data;
+  };
+
+  render() {
+    return (
+      <div>
+        <Dashboard
+          state={this.state}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
+
+// <button><img src={require("./public/excel.png")} alt="excel icon"/>Import</button>
+// <button><img src={require("./public/excel.png")} alt="excel icon"/>Export</button>
+// <button><img src={require("./public/api.png")} alt="api icon"/></button>
+// <button> Export to Gif </button>
+
+// Ideas:
+// Menu button to add additional chart types or remove existing
+// Menu button to make colors monatone.
+// Take a look at the highcharts live data feature https://www.highcharts.com/blog/news/live-data-configuration/
