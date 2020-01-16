@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/animated-chart-demo/static/css/main.35c0cc50.chunk.css",
+    "main.js": "/animated-chart-demo/static/js/main.6c49b08f.chunk.js",
+    "main.js.map": "/animated-chart-demo/static/js/main.6c49b08f.chunk.js.map",
+    "runtime-main.js": "/animated-chart-demo/static/js/runtime-main.acef8cd3.js",
+    "runtime-main.js.map": "/animated-chart-demo/static/js/runtime-main.acef8cd3.js.map",
+    "static/css/2.64a99b10.chunk.css": "/animated-chart-demo/static/css/2.64a99b10.chunk.css",
+    "static/js/2.fb991aca.chunk.js": "/animated-chart-demo/static/js/2.fb991aca.chunk.js",
+    "static/js/2.fb991aca.chunk.js.map": "/animated-chart-demo/static/js/2.fb991aca.chunk.js.map",
+    "index.html": "/animated-chart-demo/index.html",
+    "precache-manifest.8e6c2c10aa57fa240fc7c0f6077e58ee.js": "/animated-chart-demo/precache-manifest.8e6c2c10aa57fa240fc7c0f6077e58ee.js",
+    "service-worker.js": "/animated-chart-demo/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "/animated-chart-demo/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.35c0cc50.chunk.css.map": "/animated-chart-demo/static/css/main.35c0cc50.chunk.css.map",
+    "static/js/2.fb991aca.chunk.js.LICENSE": "/animated-chart-demo/static/js/2.fb991aca.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acef8cd3.js",
+    "static/css/2.64a99b10.chunk.css",
+    "static/js/2.fb991aca.chunk.js",
+    "static/css/main.35c0cc50.chunk.css",
+    "static/js/main.6c49b08f.chunk.js"
+  ]
+}
