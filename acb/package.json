@@ -2,7 +2,7 @@
   "name": "acb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://j2oconnor.github.io/animated-charts-demo.git",
+  "homepage": "http://j2oconnor.github.io/animated-chart-demo",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "cheeseburger-menu": "0.0.13",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
