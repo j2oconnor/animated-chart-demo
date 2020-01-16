@@ -2,10 +2,12 @@
   "name": "acb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://j2oconnor.github.io/animated-charts-demo.git",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "cheeseburger-menu": "0.0.13",
     "create-react-class": "^15.6.3",
+    "gh-pages": "^2.2.0",
     "highcharts": "^7.2.1",
     "highcharts-react-official": "^2.2.2",
     "react": "^16.11.0",
@@ -16,6 +18,8 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
