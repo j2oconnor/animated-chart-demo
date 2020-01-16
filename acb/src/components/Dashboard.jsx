@@ -57,17 +57,17 @@ class Dashboard extends React.Component {
                     isOpen={this.state.menuOpen}
                     closeCallback={this.closeMenu}>
                     <div className="menu-item" style={{color: 'black'}}>
-                        <a onClick={this.toggleDarkMode} href={'/#'}>Toggle DarkMode</a>
+                        <div onClick={this.toggleDarkMode} >Toggle DarkMode</div>
                     </div>
                     <div className="menu-item" style={{color: 'black'}}>
-                        <a onClick={this.increaseSpeed} href={'/#'}>Increase Speed</a>
+                        <div onClick={this.increaseSpeed} >Increase Speed</div>
                     </div>
                     <div className="menu-item" style={{color: 'black'}}>
-                        <a onClick={this.decreaseSpeed} href={'/#'}>Decrease Speed</a>
+                        <div onClick={this.decreaseSpeed} >Decrease Speed</div>
                     </div>
                     <div className="menu-item" style={{color: 'black'}}>
                         <p className="hint">Current Interval Value:
-                            <span style={{color: 'blue', fontWeight: 'bold'}}> {(this.state.speed / 1000)} seconds</span>
+                            <span style={{color: 'blue', fontWeight: 'bold', width: '100%'}}> {(this.state.speed / 1000)} seconds</span>
                         </p>
                     </div>
                     <p className="hint" style={{color: 'black'}}>Click outside the menu to close it, or swipe it closed on touch device</p>

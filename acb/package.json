@@ -2,7 +2,7 @@
   "name": "acb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://j2oconnor.github.io/animated-chart-demo",
+  "homepage": "https://j2oconnor.github.io/animated-chart-demo/",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "cheeseburger-menu": "0.0.13",
