@@ -5,7 +5,7 @@ export function addDataLabels(chart, theme) {
         var y = null;
         chart.xAxis[0].ticks[i] && (y = chart.xAxis[0].ticks[i].label.xy.y);
         point.customDataLabel = chart.renderer.text(
-            point.y, x, y ).css(
+          point.y + '%', x, y).css(
                 { color: text_color, fontSize: '17px' }).attr({ zIndex: 3 }).add();
         setAlign(chart, point.customDataLabel);
     });
@@ -51,7 +51,7 @@ function animateColumns(next_series, chart) {
                 animateAxisLabel(ticks, i, j, 'true');
                 var labelX = chart.plotWidth - new_series[i].plotY + chart.plotLeft;
                 ticks[j] && (new_series[i].customDataLabel.attr({ 
-                    text: new_series[i].y}).animate({
+                    text: new_series[i].y + '%'}).animate({
                         y: ticks[j].label.xy.y,
                         x: labelX
                     }));
@@ -69,7 +69,7 @@ function animateGenericChart(chart, next_series) {
 
 export function animatePackedBubble(chart, series, speed) {
     if (chart.series === undefined) { return }
-    [...Array(6)].forEach((_, i) => chart.series[0].remove());
+    [...Array(series.length)].forEach((_, i) => chart.series[0].remove());
     var s_index = 0, action = 'remove', simulation = 'off';
     const updateBubs = () => {
       if (simulation === 'off'){ // Add all available series then turn on simulation

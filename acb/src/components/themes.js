@@ -68,9 +68,9 @@ export const dark = {
     plotOptions: {
         series: {
             dataLabels: {
-                color: 'grey',
                 style: {
-                    fontSize: '13px'
+                    color: 'white',
+                    fontSize: '15px'
                 }
             },
             marker: {
@@ -147,9 +147,9 @@ export const dark = {
     plotOptions: {
         series: {
             dataLabels: {
-                color: 'black',
                 style: {
-                    fontSize: '13px'
+                    color: 'black',
+                    fontSize: '15px'
                 }
             },
             marker: {

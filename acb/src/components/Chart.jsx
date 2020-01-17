@@ -34,7 +34,7 @@ class Chart extends React.Component {
             dataLabels: {
               enabled: true,
               format: '{point.name}',
-              style: {fontSize: '17px'},
+              style: {fontSize: '17px', textOutline: false, color: 'white'},
             },
             packedbubble: {
               layoutAlgorithm: {
