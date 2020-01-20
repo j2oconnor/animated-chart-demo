@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
     constructor(props) {
         super(props);  
         this.toggleDarkMode=this.toggleDarkMode.bind(this);
-        this.state = {theme_data: dark, theme_name: 'dark', speed: 3500, menuOpen: false};
+        this.state = {theme_data: dark, theme_name: 'dark', speed: 4000, menuOpen: false};
         this.openMenu=this.openMenu.bind(this);
         this.closeMenu=this.closeMenu.bind(this);
         this.increaseSpeed=this.increaseSpeed.bind(this);
@@ -19,8 +19,10 @@ class Dashboard extends React.Component {
     toggleDarkMode() {
         if (this.state.theme_name === 'light') {
             this.setState({theme_data: dark, theme_name: 'dark'});
+            document.body.style = 'background: black;';
         } else {
             this.setState({theme_data: light, theme_name: 'light'});
+            document.body.style = 'background: white;';
         }
     }
 
@@ -33,8 +35,7 @@ class Dashboard extends React.Component {
     }
 
     increaseSpeed() {
-        if (this.state.speed > 2500) {
-
+        if (this.state.speed > 3000) {
             this.setState({speed: (this.state.speed - 500)});
         }
     }
@@ -86,7 +87,7 @@ class Dashboard extends React.Component {
                     </HamburgerMenu>
                 </div>
                 <div className="row">
-                    <div className="col-xs-6 col-sm-6 mb-6 lg-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <Chart
                             data={[{data: this.props.state.column_chart.series[0].data}]}
                             titleName={this.props.state.column_chart.series[0].title}
@@ -100,7 +101,7 @@ class Dashboard extends React.Component {
                             theme_name={this.state.theme_name}
                         />
                     </div>
-                    <div className="col-xs-6 col-sm-6 mb-6 lg-6">                
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">                
                         <Chart
                             data={[{data: this.props.state.column_chart.series[0].data}]}
                             titleName={this.props.state.column_chart.series[0].title}
@@ -114,9 +115,7 @@ class Dashboard extends React.Component {
                             theme_name={this.state.theme_name}
                         />  
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs-6 col-sm-6 mb-6 lg-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <Chart //TODO: Implement radial gradient fill https://www.highcharts.com/blog/snippets/dynamic-bubbles-chart/
                             data={[{data: this.props.state.bubble_chart.series[0].data}]}
                             titleName={this.props.state.bubble_chart.series[0].title}
@@ -129,7 +128,7 @@ class Dashboard extends React.Component {
                             theme_name={this.state.theme_name}
                         />  
                     </div>
-                    <div className="col-xs-6 col-sm-6 mb-6 lg-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <Chart
                             data={this.props.state.packed_bubble.series}
                             titleName={"Global Carbon Emissions 2014"}

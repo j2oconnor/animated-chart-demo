@@ -17,22 +17,30 @@ class Chart extends React.Component {
       progress: 0,
       chartData: {
         chart: {
-          animation: { duration: this.props.speed },
+          animation: { duration: 2700 },
           type: this.props.chartType,
           inverted: this.props.inverted,
-          plotBorderWidth: 1,
+          plotBorderWidth: 0,
           zoomType: 'xy',
         },
         title: {
           text: this.props.titleName,
           // useHTML: true // TODO: Animate the title to fly in/out, or remove title and add a custom html element
         },
+        credits: {
+          enabled: false
+        },
         series: this.props.data,
         plotOptions: {
           column: this.props.colorByPoint,
+          bubble: {
+            minSize: '20%',
+            maxSize: '50%',
+          },
           series: {
             dataLabels: {
               enabled: true,
+              allowOverlap: false,
               format: '{point.name}',
               style: {fontSize: '17px', textOutline: false, color: 'white'},
             },

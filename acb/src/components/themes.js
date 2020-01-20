@@ -30,7 +30,8 @@ export const dark = {
         gridLineColor: '#707073',
         labels: {
             style: {
-                color: '#E0E0E3'
+                color: '#E0E0E3',
+                fontSize: '12px',
             }
         },
         lineColor: '#707073',
@@ -46,7 +47,8 @@ export const dark = {
         gridLineColor: '#707073',
         labels: {
             style: {
-                color: '#E0E0E3'
+                color: '#E0E0E3',
+                fontSize: '12px',
             }
         },
         lineColor: '#707073',
@@ -127,7 +129,13 @@ export const dark = {
     colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
         '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
     chart: {
-        backgroundColor: null,
+        backgroundColor: {
+            linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+            stops: [
+                [0, '#f2f2f7'],
+                [1, '#e6e6e8']
+            ]
+        },
         style: {
             fontFamily: 'Dosis, sans-serif'
         }
@@ -175,6 +183,11 @@ export const dark = {
     },
 
     xAxis: {
+        title: {
+            style: {
+                color: 'black',
+            }
+        },
         labels: {
             style: {
                 fontSize: '12px',
