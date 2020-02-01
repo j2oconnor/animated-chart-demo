@@ -73,7 +73,7 @@ class Dashboard extends React.Component {
                     </div>
                     <p className="hint" style={{color: 'black'}}>Click outside the menu to close it, or swipe it closed on touch device</p>
                 </CheeseburgerMenu>
-                <div className="burger-container" style={{height: 30}}>
+                <div className="burger-container" style={{height: 50}}>
                     <HamburgerMenu
                         isOpen={this.state.menuOpen}
                         menuClicked={this.openMenu}
@@ -85,6 +85,7 @@ class Dashboard extends React.Component {
                         borderRadius={100}
                         animationDuration={0.1}>
                     </HamburgerMenu>
+                   &nbsp; Menu
                 </div>
                 <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
